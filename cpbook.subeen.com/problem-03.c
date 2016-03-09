@@ -25,7 +25,7 @@ int main()
         
         getchar(); // required to remove previous input
         gets(numbers);
-        //scanf("%[^\n]", numbers);
+        //scanf(" %[^\n]", numbers);
         
         length = strlen(numbers);
         
