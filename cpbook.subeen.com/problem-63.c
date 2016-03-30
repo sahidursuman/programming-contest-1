@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 #include <math.h>
-
+//#include <time.h>
 
 const int MAX = 100000;
 //int primes_ara[MAX];
@@ -32,8 +32,12 @@ void sieve() {
 
 int main()
 {
-    //freopen("/sdcard/coding/anwar/oj/in.txt", "rt", stdin);
-    //freopen("/sdcard/coding/anwar/oj/out.txt", "wt", stdout);
+    /*freopen("/sdcard/coding/anwar/oj/in.txt", "rt", stdin);
+    freopen("/sdcard/coding/anwar/oj/out.txt", "wt", stdout);
+    
+    clock_t start, end;
+    double time_spent;
+    start = clock();*/
     
     // now call the giant sieve function
     sieve();
@@ -54,5 +58,10 @@ int main()
         printf("%d\n", count);
     }
     
+    /*end = clock();
+    time_spent = (double)(end - start) / CLOCKS_PER_SEC;
+    printf("Time spent: %0.9lf\n", time_spent);*/
+    
     return 0;
+    
 } // end main
